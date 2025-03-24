@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project2/controllers/user/user_class.dart';
 
 class Home extends StatefulWidget{
   Home({Key? key}) : super(key: key);
@@ -8,6 +9,9 @@ class Home extends StatefulWidget{
 }
 
 class _HomeState extends State<Home> {
+  var g;
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +28,7 @@ class _HomeState extends State<Home> {
             
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text('full name'),
+              child: Text(g),
             ),
             Padding(
               padding: EdgeInsets.all(8.0),
